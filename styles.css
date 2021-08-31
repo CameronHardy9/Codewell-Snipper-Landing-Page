@@ -4,13 +4,125 @@
     padding: 0;
 }
 
-body {
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.background-image {
     background-image: url(./Assets/Background.png);
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
 }
 
 .main-nav {
     display: flex;
     justify-content: space-between;
-    margin: 20px 10px;
+    padding: 20px 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+}
+
+.main-heading > h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+    margin: 20px 20px 0px 20px; 
+}
+
+.main-copy > p {
+    color: rgb(73, 73, 73);
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 15px;
+}
+
+.get-started-up {
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-started-up > a {
+    text-decoration: none;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.span1 {
+    color: white;
+    font-weight: 700;
+}
+
+.span2 {
+    color: lightgray;
+    font-weight: 400;
+}
+
+.no-cc {
+    margin: 20px;
+    color: rgb(73, 73, 73);
+}
+
+.snip-image {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+.snip-image > img{
+    width: 90vw;
+}
+
+.lower-container {
+    margin-top: 75px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.example-pic > img{
+    width: 90vw;
+}
+
+.second-heading > h2{
+    font-weight: 700;
+}
+
+.second-copy {
+    color: rgb(73, 73, 73);
+    font-weight: 400;
+}
+
+.get-started-low {
+    background-color: black;
+    border-radius: 5px;
+    width: 50vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-started-low > a {
+    text-decoration: none;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
 }

@@ -84,17 +84,33 @@ html {
 
 .snip-image > img{
     width: 90vw;
+    max-width: 1000px;
 }
 
 .lower-container {
     margin-top: 75px;
     padding: 0px 20px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+}
+
+.example-pic {
+    align-self: center;
 }
 
 .example-pic > img{
     width: 90vw;
+    max-width: 350px;
+}
+
+.second-heading {
+    margin-top: 60px;
+}
+
+.lower-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .second-heading > h2{
@@ -102,13 +118,13 @@ html {
     font-weight: 700;
 }
 
-.second-copy {
+.second-copy > p{
     color: rgb(73, 73, 73);
     font-weight: 400;
+    margin: 15px 0px;
 }
 
 .get-started-low {
-    background-color: black;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -116,16 +132,68 @@ html {
 }
 
 .get-started-low > a {
+    background-color: black;
     text-decoration: none;
     height: 50px;
-    padding: 0px 10vw;
+    padding: 0px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .footer {
-    height: 200px;
+    height: 100px;
+    margin-top: 50px;
+    padding: 20px;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+.logo-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.docs {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.docs > a {
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+}
+
+.pp {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .docs {
+        justify-content: flex-end;
+    }
+    
+}
+
+@media only screen and (min-width: 769px) {
+    .lower-container {
+        flex-direction: row;
+    }
+    
+    .example-pic {
+        order: 1;
+    }
+
+    .docs {
+        justify-content: flex-end;
+    }
 }
